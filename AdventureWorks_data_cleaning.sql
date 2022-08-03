@@ -3,7 +3,7 @@
     ALTER TABLE customers
     DROP COLUMN Prefix;
     
-    #2 Changing first_name, last_name to proper format
+    #2 Changing first_name, last_name from Uppercase to propercase format
     UPDATE customers SET First_name = REPLACE(TRIM(First_name),SUBSTRING(First_name,2),LOWER(SUBSTRING(First_name,2)));
     UPDATE customers SET Last_Name = REPLACE(TRIM(Last_Name),SUBSTRING(Last_Name,2),LOWER(SUBSTRING(Last_Name,2)));
     
@@ -27,14 +27,14 @@
 	JOIN customers b
 	WHERE a.Customer_Key < b.Customer_Key
 	AND a.First_name = b.First_Name
-	AND	a.Last_Name = b.Last_Name
+	AND a.Last_Name = b.Last_Name
 	AND a.Birth_Date = b.Birth_Date
 	AND a.Email_Address = b.Email_Address;
     
 -- Some formatting on product_categories and product_subcategories, returns, and territories tables
 	#1 Removing redundant spaces
     UPDATE product_categories SET Category_Name = TRIM(Category_Name);
-	UPDATE product_subcategories SET Subcategory_Name = TRIM(Subcategory_Name);
+    UPDATE product_subcategories SET Subcategory_Name = TRIM(Subcategory_Name);
     UPDATE territories SET Region = TRIM(Region);
     UPDATE territories SET Country = TRIM(Country);
     UPDATE territories SET Continent = TRIM(Continent);
@@ -62,7 +62,7 @@
      JOIN products b
      WHERE a.Product_Key < b.Product_Key
 		AND a.SKU = b.SKU
-		AND	a.Product_Name = b.Product_Name;
+		AND a.Product_Name = b.Product_Name;
   
 -- Some formatting on Sales_2015, Sales_2016, and Sales_2017
      #1 Changing Order_Date, Stock_Date from DATETIME into DATE
