@@ -5,7 +5,7 @@
     
 -- Some assumptions: 
 	#1 The current year is 2018
-    #2 profit = Number of products sold * (product_price - product_cost) = (Number of ordered products - Number of returned products) * (product_price - product_cost)
+    	#2 profit = Number of products sold * (product_price - product_cost) = (Number of ordered products - Number of returned products) * (product_price - product_cost)
 	#3 For simplicity, queries are only in year 2015 (replace sales_2015 by those of 2016 and 2017 to extract the data of the following years)
 
 -- Some Questions for exploratory data analysis
@@ -37,7 +37,7 @@ ORDER BY COUNT(DISTINCT a. customer_key) DESC;
 	#1.4 The number of customers of each age group in 2015, 2016, and 2017 (ages are grouped into 4 ranges)
 SELECT 
 CASE 
-		WHEN 2018 - YEAR(Birth_Date) < 40 THEN 'Under 40'
+	WHEN 2018 - YEAR(Birth_Date) < 40 THEN 'Under 40'
         WHEN 2018 - YEAR(Birth_Date) BETWEEN 40 AND 50 THEN 'Age 40-50'
         WHEN 2018 - YEAR(Birth_Date) BETWEEN 51 AND 60 THEN 'Age 51-60'
         ELSE 'Elderly'
@@ -47,8 +47,8 @@ FROM sales_2015 a
 JOIN customers b
 	ON a.Customer_Key = b.Customer_Key
 GROUP BY 
-		CASE 
-		WHEN 2018 - YEAR(Birth_Date) < 40 THEN 'Under 40'
+CASE 
+	WHEN 2018 - YEAR(Birth_Date) < 40 THEN 'Under 40'
         WHEN 2018 - YEAR(Birth_Date) BETWEEN 40 AND 50 THEN 'Age 40-50'
         WHEN 2018 - YEAR(Birth_Date) BETWEEN 51 AND 60 THEN 'Age 51-60'
         ELSE 'Elderly'
@@ -63,13 +63,13 @@ CASE
         WHEN Annual_Income BETWEEN 60001 AND 90000 THEN '60k-90k'
         ELSE 'More than 90k'
 	END AS 'Annual income group',
- COUNT(DISTINCT a.Customer_Key) AS 'Number of customers'
+COUNT(DISTINCT a.Customer_Key) AS 'Number of customers'
 FROM sales_2015 a
 JOIN customers b
 	ON a.Customer_Key = b.Customer_Key
 GROUP BY 
-		CASE 
-		WHEN Annual_Income < 30000 THEN 'Less than 30k'
+CASE 
+	WHEN Annual_Income < 30000 THEN 'Less than 30k'
         WHEN Annual_Income BETWEEN 30000 AND 60000 THEN '30k-60k'
         WHEN Annual_Income BETWEEN 60001 AND 90000 THEN '60k-90k'
         ELSE 'More than 90k'
@@ -127,26 +127,26 @@ ORDER BY SUM(Return_Quantity) DESC;
 SELECT COUNT(product_key) AS 'Number of products'
 FROM sales_2016
 WHERE Product_Key IN (SELECT Product_Key 
-					  FROM products 
+		      FROM products 
                       WHERE Subcategory_Key IN
-											(SELECT Subcategory_Key
-											FROM product_subcategories
-											WHERE Category_Key IN
-																(SELECT Category_Key
-																FROM product_categories
-																WHERE Category_Name = 'Clothing')));
+						(SELECT Subcategory_Key
+						FROM product_subcategories
+						WHERE Category_Key IN
+									(SELECT Category_Key
+									FROM product_categories
+									WHERE Category_Name = 'Clothing')));
 
 #5.2 How many products ordered in 2017 belong to subcategory 'Tires and Tubes'?
 SELECT COUNT(product_key) AS 'Number of products'
 FROM sales_2017 a
 WHERE EXISTS (SELECT Product_Key 
-				FROM products b
+		FROM products b
                 WHERE b.Product_Key = a.Product_Key
                 AND EXISTS
-							(SELECT Subcategory_Key
-							FROM product_subcategories c
-							WHERE c.Subcategory_Key = b.Subcategory_Key
-							AND Subcategory_Name = 'Tires and Tubes'));
+			(SELECT Subcategory_Key
+			FROM product_subcategories c
+			WHERE c.Subcategory_Key = b.Subcategory_Key
+			AND Subcategory_Name = 'Tires and Tubes'));
 
 #6 Name the customers who had the highest total order_quantity in 2016 and 2017
 WITH CTE AS (
