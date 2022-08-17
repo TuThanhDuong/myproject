@@ -8,5 +8,5 @@ https://madzynguyen.com/xay-dung-portfolio-cho-data-analyst-thanh-thao-sql/
   
 2. AdventureWorks_ERD is included to visualize the structure of the dummy database 
 
-3. Data presented in Adventuresworks_topline_final is extracted by either using Excel power query or SQL queries results.
+3. Data presented in Adventuresworks_topline_final is extracted by either using Excel power query/ power pivot or SQL queries results.
  
