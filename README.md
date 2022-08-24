@@ -15,7 +15,7 @@ https://madzynguyen.com/xay-dung-portfolio-cho-data-analyst-thanh-thao-sql/
  
 ## ABOUT SQLserverdatabase
 1. Credit for  this SQLserverdatabase dataset:
-- sqlservertutorial.net provides readers with the SQL codes to construct the sample database. The codes are available for download in the below link:
+sqlservertutorial.net provides readers with the SQL codes to construct the sample database. The codes are available for download in the below link:
 https://www.sqlservertutorial.net/load-sample-database/
 
 2. SQLserver database diagram is also included to better visualize the structure of this sample database. I ran the SQL codes to construct the database in MySQL and use the reverse engineer feature to extract this ER diagram
