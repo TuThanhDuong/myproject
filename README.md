@@ -22,4 +22,4 @@ https://www.sqlservertutorial.net/load-sample-database/
 
 3. SQLserverdatabase_Raw data.rar contains all the raw data of the database
 
-4. Data presented in Dashboard report is extracted by using SQL queries (queries results are in Reference tabs_Sales and Reference tabs_Orders)
+4. 'SQL queries for Dashboard' contains the SQL codes written to extract data from the database. This extracted data then loaded to the Reference tabs_Sales and Reference tabs_Orders of the Dashboard report.
