@@ -6,7 +6,7 @@ There are 2 different sample datasets in myproject: Adventureworks and SQLserver
 1. Credit for  this Adventureworks dummy dataset:
 - The link to this dataset is incorporated in this blog post by Maz Nguyen:
 https://madzynguyen.com/xay-dung-portfolio-cho-data-analyst-thanh-thao-sql/
-- However, all of the SQL codes, ERD uploaded in this repository are self_written and designed. My special thanks to Maz Nguyen for making this dataset open for download.
+- However, all of the SQL codes, ERD (Entities Relational Diagram) uploaded in this repository are self_written and designed. My special thanks to Maz Nguyen for making this dataset open for download.
   Since I do not own this dataset, please visit Maz nguyen's blog post via the link above for a direct download if needed.
   
 2. AdventureWorks_ERD is included to visualize the structure of the dummy database 
@@ -17,9 +17,9 @@ https://madzynguyen.com/xay-dung-portfolio-cho-data-analyst-thanh-thao-sql/
 1. Credit for  this SQLserverdatabase dataset:
 sqlservertutorial.net provides readers with the SQL codes to construct the sample database. The codes are available for download in the below link:
 https://www.sqlservertutorial.net/load-sample-database/
+I ran the SQL codes to construct the database in MySQL and added one more table "Order_Status" 
 
-2. SQLserver database diagram is also included to better visualize the structure of this sample database. I ran the SQL codes to construct the database in MySQL and use the reverse engineer feature to extract this ER diagram
+2. I used the reverse engineer feature in MySQL to extract the database ERD (Entities Relational Diagram) to better visualize the structure of this sample database.
 
-3. SQLserverdatabase_Raw data.rar contains all the raw data of the database
 
-4. 'SQL queries for Dashboard' contains the SQL codes written to extract data from the database. This extracted data then loaded to the Reference tabs_Sales and Reference tabs_Orders of the Dashboard report.
+3. 'SQL queries for Dashboard' contains the SQL codes written to extract data from the database. This extracted data then loaded to the Reference tabs_Sales and Reference tabs_Orders to create the Dashboard report.
