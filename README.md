@@ -6,12 +6,12 @@ There are 2 different sample datasets in myproject: Adventureworks and SQLserver
 1. Credit for  this Adventureworks dummy dataset:
 - The link to this dataset is incorporated in this blog post by Maz Nguyen:
 https://madzynguyen.com/xay-dung-portfolio-cho-data-analyst-thanh-thao-sql/
-- However, all of the SQL codes, ERD (Entities Relational Diagram) uploaded in this repository are self_written and designed. My special thanks to Maz Nguyen for making this dataset open for download.
-  Since I do not own this dataset, please visit Maz nguyen's blog post via the link above for a direct download if needed.
+ Since I do not own this dataset, please visit Maz nguyen's blog post via the link above for a direct download if needed.
+- However, all of the SQL codes, AdventureWorks_ERD (Entities Relational Diagram) uploaded in this repository are self_written and designed.
   
-2. AdventureWorks_ERD is included to visualize the structure of the dummy database 
+2. AdventureWorks_ERD is to visualize the structure of the dummy database 
 
-3. Data presented in Adventuresworks_topline_final is extracted by either using Excel power query/ power pivot or SQL queries results.
+3. Data presented in Adventuresworks_topline_final is extracted by either using Excel power query, or Excel power pivot or SQL queries results.
  
 ## ABOUT SQLserverdatabase
 1. Credit for  this SQLserverdatabase dataset:
