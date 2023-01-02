@@ -11,7 +11,11 @@ https://madzynguyen.com/xay-dung-portfolio-cho-data-analyst-thanh-thao-sql/
   
 2. AdventureWorks_ERD is to visualize the structure of the dummy database 
 
-3. Data presented in Adventuresworks_topline_final is extracted by either using Excel power query, or Excel power pivot or SQL queries results.
+3. AdventureWorks_data_cleaning contains SQL codes to clean data. This is an important step to ensure the data extracted are in consistent format and no data duplicates/ missings to distort our findings. 
+
+4. AdventureWorks_data_queries are SQL codes to extract data from the database. Some of the codes are presented in Adventuresworks_topline_final
+
+5. Data presented in Adventuresworks_topline_final is extracted by either using Excel power query, or Excel power pivot or SQL queries results.
  
 ## ABOUT SQLserverdatabase
 1. Credit for  this SQLserverdatabase dataset:
