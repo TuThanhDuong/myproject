@@ -1,6 +1,6 @@
 # myproject
 
-There are 2 different sample datasets in myproject: Adventureworks and SQLserverdatabase. Files of which names start with either "Adventureworks" or "SQLserverdatabase" belong respectively to each dataset.
+There are 2 different sample datasets in myproject: Adventureworks and SQLserverdatabase. Files of which names start with either "Adventureworks" or "SQLserverdatabase" belong respectively to each dataset. This is to showcase how to use SQL to extract data needed from the databases and Excel to visualize those data.
 
 ## ABOUT THE ADVENTUREWORKS
 1. Credit for  this Adventureworks dummy dataset:
@@ -22,4 +22,4 @@ I ran the SQL codes to construct the database in MySQL and added one more table 
 2. I used the reverse engineer feature in MySQL to extract the database ERD (Entities Relational Diagram) to better visualize the structure of this sample database.
 
 
-3. 'SQL queries for Dashboard' contains the SQL codes written to extract data from the database. This extracted data then loaded to the Reference tabs_Sales and Reference tabs_Orders to create the Dashboard report.
+3. 'SQL queries for Dashboard' contains the SQL codes written to extract data from the database. This extracted data then loaded to the Reference tabs_Sales and Reference tabs_Orders of Excel file "Dashboard_report_final" which serve as the inputs of the Dashboard report.
