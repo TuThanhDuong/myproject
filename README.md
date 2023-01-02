@@ -25,5 +25,6 @@ I ran the SQL codes to construct the database in MySQL and added one more table 
 
 2. I used the reverse engineer feature in MySQL to extract the database ERD (Entities Relational Diagram) to better visualize the structure of this sample database.
 
+3. To keep it short and simple, I skipped the data cleansing step.
 
-3. 'SQL queries for Dashboard' contains the SQL codes written to extract data from the database. This extracted data then loaded to the Reference tabs_Sales and Reference tabs_Orders of Excel file "Dashboard_report_final" which serve as the inputs of the Dashboard report.
+3. 'SQL queries for Dashboard' contains the SQL codes written to extract data from the database. The extracted data then loaded to the Reference tabs_Sales and Reference tabs_Orders of Excel file "Dashboard_report_final" which serve as the inputs of the Dashboard report.
